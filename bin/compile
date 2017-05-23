@@ -207,7 +207,7 @@ rm -fr $BUILD_DIR/.cloudfoundry/src
 deep-cp /app/.cloudfoundry/src $BUILD_DIR/.cloudfoundry/src
 
 # Django collectstatic support.
-sub-env $BIN_DIR/steps/collectstatic
+# sub-env $BIN_DIR/steps/collectstatic
 
 # Create .profile script for application runtime environment variables.
 set-env PATH '$HOME/.cloudfoundry/python/bin:$PATH'
